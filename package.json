@@ -1,14 +1,22 @@
 {
   "name": "khai-node-js-course",
   "version": "1.0.0",
-  "description": "Yana",
-  "main": "index.js",
+  "description": "Litvinov Andrii 545v",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node src/index.js",
+    "migration:generate": "drizzle-kit generate:pg",
+    "migration:push": "drizzle-kit push:pg"
   },
   "author": "Yana",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "drizzle-orm": "^0.30.1",
+    "express": "^4.21.1",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
   }
 }
