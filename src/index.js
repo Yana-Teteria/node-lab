@@ -1,5 +1,5 @@
 const express = require('express')
-const productRoutes = require('./product.router');
+const productRoutes = require('./product/product.router');
 const userRoutes = require('./user/user.router');
 const bodyParser = require('body-parser');
 const { logRequest } = require('./middleware');
