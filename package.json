@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node src/index.js",
+    "server": "node --watch src/index.js",
     "migration:generate": "drizzle-kit generate",
     "migration:push": "drizzle-kit push"
   },
   "author": "Yana",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "drizzle-kit": "^0.31.0",
     "drizzle-orm": "^0.43.1",
     "express": "^4.21.1",
